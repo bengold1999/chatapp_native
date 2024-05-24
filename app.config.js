@@ -1,4 +1,6 @@
-{
+
+import 'dotenv/config.js'
+export default {
   "expo": {
     "name": "chatapp_native",
     "slug": "chatapp_native",
@@ -22,6 +24,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    exstra: {
+      apiKey: process.env.ApiKey,
+      authDomain: process.env.AuthDomain,
+      projectId: process.env.ProjectId,
+      storageBucket: process.env.StorageBucket,
+      messagingSenderId: process.env.MessagingSenderId,
+      appId: process.env.AppId
     }
   }
 }
