@@ -4,13 +4,15 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Chat from './screens/Chat.jsx'
 import { NavigationContainer } from '@react-navigation/native'
 import Login from './screens/Login.jsx'
+import SignUp from './screens/SignUp.jsx'
 
 const Stack = createStackNavigator()
 
 function ChatStack() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name='Login' component={Login} />
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="SignUp" component={SignUp} />
     </Stack.Navigator>
 
   )
